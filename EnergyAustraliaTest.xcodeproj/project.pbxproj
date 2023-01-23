@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		AB53F926297BF67A0082EF45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB53F925297BF67A0082EF45 /* AppDelegate.swift */; };
-		AB53F928297BF67A0082EF45 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB53F927297BF67A0082EF45 /* SceneDelegate.swift */; };
 		AB53F92A297BF67A0082EF45 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB53F929297BF67A0082EF45 /* ViewController.swift */; };
 		AB53F92D297BF67A0082EF45 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB53F92B297BF67A0082EF45 /* Main.storyboard */; };
 		AB53F92F297BF67B0082EF45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB53F92E297BF67B0082EF45 /* Assets.xcassets */; };
@@ -16,6 +15,17 @@
 		AB53F93D297BF67B0082EF45 /* EnergyAustraliaTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB53F93C297BF67B0082EF45 /* EnergyAustraliaTestTests.swift */; };
 		AB53F947297BF67B0082EF45 /* EnergyAustraliaTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB53F946297BF67B0082EF45 /* EnergyAustraliaTestUITests.swift */; };
 		AB53F949297BF67B0082EF45 /* EnergyAustraliaTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB53F948297BF67B0082EF45 /* EnergyAustraliaTestUITestsLaunchTests.swift */; };
+		AB53F95A297C6EE50082EF45 /* MusicDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB53F959297C6EE50082EF45 /* MusicDataService.swift */; };
+		AB53F95E297C7A690082EF45 /* musicFestivalDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB53F95D297C7A690082EF45 /* musicFestivalDataModel.swift */; };
+		AB53F960297C7B730082EF45 /* ErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB53F95F297C7B730082EF45 /* ErrorModel.swift */; };
+		AB53F966297D42910082EF45 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB53F965297D42910082EF45 /* Utilities.swift */; };
+		AB53F96A297D64FC0082EF45 /* RecordLabelsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB53F969297D64FC0082EF45 /* RecordLabelsTableViewController.swift */; };
+		AB53F96C297DBB790082EF45 /* ViewController_ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB53F96B297DBB790082EF45 /* ViewController_ViewModel.swift */; };
+		AB53F96E297DC1400082EF45 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB53F96D297DC1400082EF45 /* Constants.swift */; };
+		AB53F973297E0E4A0082EF45 /* RecordsLabelsVC_ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB53F972297E0E4A0082EF45 /* RecordsLabelsVC_ViewModel.swift */; };
+		AB53F977297E46C60082EF45 /* BandsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB53F976297E46C60082EF45 /* BandsTableViewController.swift */; };
+		AB53F979297E4AEF0082EF45 /* MusicFestivalTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB53F978297E4AEF0082EF45 /* MusicFestivalTableViewController.swift */; };
+		AB53F97C297E5BB60082EF45 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB53F97B297E5BB60082EF45 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +48,6 @@
 /* Begin PBXFileReference section */
 		AB53F922297BF67A0082EF45 /* EnergyAustraliaTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnergyAustraliaTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB53F925297BF67A0082EF45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AB53F927297BF67A0082EF45 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		AB53F929297BF67A0082EF45 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AB53F92C297BF67A0082EF45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AB53F92E297BF67B0082EF45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +58,17 @@
 		AB53F942297BF67B0082EF45 /* EnergyAustraliaTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EnergyAustraliaTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB53F946297BF67B0082EF45 /* EnergyAustraliaTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnergyAustraliaTestUITests.swift; sourceTree = "<group>"; };
 		AB53F948297BF67B0082EF45 /* EnergyAustraliaTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnergyAustraliaTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AB53F959297C6EE50082EF45 /* MusicDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicDataService.swift; sourceTree = "<group>"; };
+		AB53F95D297C7A690082EF45 /* musicFestivalDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = musicFestivalDataModel.swift; sourceTree = "<group>"; };
+		AB53F95F297C7B730082EF45 /* ErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorModel.swift; sourceTree = "<group>"; };
+		AB53F965297D42910082EF45 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		AB53F969297D64FC0082EF45 /* RecordLabelsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordLabelsTableViewController.swift; sourceTree = "<group>"; };
+		AB53F96B297DBB790082EF45 /* ViewController_ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController_ViewModel.swift; sourceTree = "<group>"; };
+		AB53F96D297DC1400082EF45 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		AB53F972297E0E4A0082EF45 /* RecordsLabelsVC_ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordsLabelsVC_ViewModel.swift; sourceTree = "<group>"; };
+		AB53F976297E46C60082EF45 /* BandsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BandsTableViewController.swift; sourceTree = "<group>"; };
+		AB53F978297E4AEF0082EF45 /* MusicFestivalTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicFestivalTableViewController.swift; sourceTree = "<group>"; };
+		AB53F97B297E5BB60082EF45 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +119,11 @@
 		AB53F924297BF67A0082EF45 /* EnergyAustraliaTest */ = {
 			isa = PBXGroup;
 			children = (
-				AB53F925297BF67A0082EF45 /* AppDelegate.swift */,
-				AB53F927297BF67A0082EF45 /* SceneDelegate.swift */,
-				AB53F929297BF67A0082EF45 /* ViewController.swift */,
+				AB53F95C297C73CE0082EF45 /* Model */,
+				AB53F95B297C73B80082EF45 /* View */,
+				AB53F961297C7E2B0082EF45 /* ViewModel */,
+				AB53F955297BFA750082EF45 /* AppDelegate */,
+				AB53F97A297E52830082EF45 /* Common */,
 				AB53F92B297BF67A0082EF45 /* Main.storyboard */,
 				AB53F92E297BF67B0082EF45 /* Assets.xcassets */,
 				AB53F930297BF67B0082EF45 /* LaunchScreen.storyboard */,
@@ -114,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				AB53F93C297BF67B0082EF45 /* EnergyAustraliaTestTests.swift */,
+				AB53F97B297E5BB60082EF45 /* Extensions.swift */,
 			);
 			path = EnergyAustraliaTestTests;
 			sourceTree = "<group>";
@@ -125,6 +148,53 @@
 				AB53F948297BF67B0082EF45 /* EnergyAustraliaTestUITestsLaunchTests.swift */,
 			);
 			path = EnergyAustraliaTestUITests;
+			sourceTree = "<group>";
+		};
+		AB53F955297BFA750082EF45 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				AB53F925297BF67A0082EF45 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		AB53F95B297C73B80082EF45 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AB53F929297BF67A0082EF45 /* ViewController.swift */,
+				AB53F969297D64FC0082EF45 /* RecordLabelsTableViewController.swift */,
+				AB53F976297E46C60082EF45 /* BandsTableViewController.swift */,
+				AB53F978297E4AEF0082EF45 /* MusicFestivalTableViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AB53F95C297C73CE0082EF45 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AB53F95D297C7A690082EF45 /* musicFestivalDataModel.swift */,
+				AB53F95F297C7B730082EF45 /* ErrorModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AB53F961297C7E2B0082EF45 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AB53F96B297DBB790082EF45 /* ViewController_ViewModel.swift */,
+				AB53F972297E0E4A0082EF45 /* RecordsLabelsVC_ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		AB53F97A297E52830082EF45 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				AB53F959297C6EE50082EF45 /* MusicDataService.swift */,
+				AB53F96D297DC1400082EF45 /* Constants.swift */,
+				AB53F965297D42910082EF45 /* Utilities.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +328,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB53F960297C7B730082EF45 /* ErrorModel.swift in Sources */,
 				AB53F92A297BF67A0082EF45 /* ViewController.swift in Sources */,
+				AB53F977297E46C60082EF45 /* BandsTableViewController.swift in Sources */,
+				AB53F966297D42910082EF45 /* Utilities.swift in Sources */,
+				AB53F96C297DBB790082EF45 /* ViewController_ViewModel.swift in Sources */,
+				AB53F95A297C6EE50082EF45 /* MusicDataService.swift in Sources */,
+				AB53F96A297D64FC0082EF45 /* RecordLabelsTableViewController.swift in Sources */,
+				AB53F95E297C7A690082EF45 /* musicFestivalDataModel.swift in Sources */,
+				AB53F979297E4AEF0082EF45 /* MusicFestivalTableViewController.swift in Sources */,
 				AB53F926297BF67A0082EF45 /* AppDelegate.swift in Sources */,
-				AB53F928297BF67A0082EF45 /* SceneDelegate.swift in Sources */,
+				AB53F96E297DC1400082EF45 /* Constants.swift in Sources */,
+				AB53F973297E0E4A0082EF45 /* RecordsLabelsVC_ViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +348,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB53F93D297BF67B0082EF45 /* EnergyAustraliaTestTests.swift in Sources */,
+				AB53F97C297E5BB60082EF45 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
