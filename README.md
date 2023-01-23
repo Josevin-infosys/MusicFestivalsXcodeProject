@@ -1,6 +1,10 @@
 # MusicFestivalsXcodeProject
 Programming test projet
 
+Note: Please run the application in simulator
+
+Contents
+
 1. Created Xcode Prjoct
 2. MVVM Architecture
 3. Rest API Call
@@ -8,7 +12,7 @@ Programming test projet
 5. Sample Test Cases
 6. Validations
 7. User Interface with Table  and Navigation Controller
-8. Error Handlers
+8. Error Handling
 
 
 
