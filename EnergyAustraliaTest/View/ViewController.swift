@@ -12,8 +12,7 @@ class ViewController: UIViewController, ViewModelViewDelegate {
     @IBOutlet weak var fetchMusicDataButton: UIButton!
     private var model: ViewController_ViewModel!
     var viewModel: ViewModelDelegate?
-    lazy var recordLabelViewController = RecordLabelsTableViewController()
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         self.viewModel = ViewController_ViewModel(viewModelViewDelegate: self)
@@ -39,8 +38,10 @@ class ViewController: UIViewController, ViewModelViewDelegate {
                 }
                 return
             }
-            self.recordLabelViewController.data = data
-            self.navigationController?.pushViewController(self.recordLabelViewController, animated: true)
+            print("About to update data==>" + (data.count.description ))
+            var recordLabelViewController = RecordLabelsTableViewController()
+            recordLabelViewController.data = data
+            self.navigationController?.pushViewController(recordLabelViewController, animated: true)
         }
     }
 }

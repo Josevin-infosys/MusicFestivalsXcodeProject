@@ -19,10 +19,12 @@ class RecordLabelsTableViewController: UITableViewController {
         self.title = "Record Labels"
         self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         print(data)
-        (recordLabels,recordLabelSortedKeys) = recordsLabelViewModel.parseData(json: data)
-        
     }
     // MARK: - Table view data source
+    
+    override func viewWillAppear(_ animated: Bool) {
+        (recordLabels,recordLabelSortedKeys) = recordsLabelViewModel.parseData(json: data)
+    }
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections

@@ -73,7 +73,7 @@ class RecordsLabelsVC_ViewModel {
             }
         }
         recordLabels.values.forEach { $0.sortBands() }
-        let recordLabelKeys = recordLabels.keys.sorted()
+        let recordLabelKeys = recordLabels.keys.sorted().filter{ $0 != "" }
         return (recordLabels,recordLabelKeys)
     }
 }

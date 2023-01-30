@@ -21,6 +21,7 @@ struct MusicDataService {
         }
         
         fetchAPIJSON(baseURL: validURL) { response, error in
+            
             guard let responseData = response else {
                 
                 if let apiError = error {
@@ -31,10 +32,11 @@ struct MusicDataService {
                     return
                 }
             }
-            
+            print("after sending the response==>" + (response?.count.description ?? "no count"))
             guard let musicFestivalData = decodeJSONStringToModel(apiResponse: responseData) else { completionHandler(.failure(.decodeError))
                 return
             }
+            print("Music Festival Data sending the response==>" + (musicFestivalData.count.description ))
             completionHandler(.success(musicFestivalData))
         }
     }
@@ -57,15 +59,18 @@ struct MusicDataService {
         
         URLSession.shared.dataTask(with: url) {(data, response, error) in
             
-            guard let httpResponse = response else {
+            guard let httpResponse = response as? HTTPURLResponse else {
                 completionhandler(nil, .networkError)
                 return
             }
-            print(httpResponse.description)
+            if httpResponse.statusCode == 429 {
+                completionhandler(nil, .throttleError)
+            }
             
-            guard let data = data else {
+            guard let data = data, httpResponse.statusCode == 200 else {
                 completionhandler(nil, .unableToFectchData)
                 return }
+            print("before sending the response==>" + (data.count.description ))
             completionhandler(data, nil)
             
         }.resume()

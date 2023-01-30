@@ -15,4 +15,5 @@ enum APIError: String, Error {
     case noData = "No data in response"
     case unknown = "Unknown error"
     case decodeError = "Unable to Decode response data"
+    case throttleError = "Too many requests, throttling"
 }

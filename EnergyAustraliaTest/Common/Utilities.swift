@@ -11,7 +11,8 @@ import UIKit
 extension Data {
     
     func convertToJSON() throws -> [[String: Any]]?  {
-        guard let jsonObject = try JSONSerialization.jsonObject(with: self, options: []) as? [AnyObject] else {
+        
+        guard let jsonObject = try JSONSerialization.jsonObject(with: self, options: .fragmentsAllowed) as? [AnyObject] else {
             throw NSError(domain: NSCocoaErrorDomain, code: 1, userInfo: [NSLocalizedDescriptionKey: "Invalid JSON"])
         }
         return jsonObject.map { $0 as! [String: Any] }
