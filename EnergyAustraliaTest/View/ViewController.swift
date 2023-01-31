@@ -29,8 +29,9 @@ class ViewController: UIViewController, ViewModelViewDelegate {
     /// - Parameters:
     ///   - data: API Text Data
     ///   - error: Issues with fetching data
-    func updateViewWithFestivalData(data: [[String : Any]]?, error: APIError?) {
+    func updateViewWithFestivalData(data: [MusicFestival]?, error: APIError?) {
         DispatchQueue.main.async {
+            
             guard let data = data else
             {
                 if error != nil {
@@ -38,9 +39,8 @@ class ViewController: UIViewController, ViewModelViewDelegate {
                 }
                 return
             }
-            print("About to update data==>" + (data.count.description ))
-            var recordLabelViewController = RecordLabelsTableViewController()
-            recordLabelViewController.data = data
+            let recordLabelViewController = RecordLabelsTableViewController()
+            recordLabelViewController.musicFestivalsData = data
             self.navigationController?.pushViewController(recordLabelViewController, animated: true)
         }
     }

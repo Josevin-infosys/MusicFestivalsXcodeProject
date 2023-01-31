@@ -8,40 +8,39 @@
 import UIKit
 
 class RecordLabelsTableViewController: UITableViewController {
-
+    
     var recordsLabelViewModel = RecordsLabelsVC_ViewModel()
     var recordLabels: [String:RecordLabel] = [:]
     var recordLabelSortedKeys:[String] = []
-    var data: [[String:Any]] = []
+    var musicFestivalsData: [MusicFestival] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Record Labels"
         self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
-        print(data)
     }
     // MARK: - Table view data source
     
     override func viewWillAppear(_ animated: Bool) {
-        (recordLabels,recordLabelSortedKeys) = recordsLabelViewModel.parseData(json: data)
+        (recordLabels,recordLabelSortedKeys) = recordsLabelViewModel.parseData(json: musicFestivalsData)
     }
-
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return  1
     }
-
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return recordLabelSortedKeys.count
     }
-
+    
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-
+        cell.accessoryType = .disclosureIndicator
         cell.textLabel?.text =  recordLabelSortedKeys[indexPath.row]
-
+        cell.detailTextLabel?.text = "Bands"
         return cell
     }
     

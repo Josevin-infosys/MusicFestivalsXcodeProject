@@ -8,7 +8,7 @@
 import Foundation
 
 protocol ViewModelViewDelegate: AnyObject {
-    func updateViewWithFestivalData(data: [[String: Any]]?, error: APIError?)
+    func updateViewWithFestivalData(data: [MusicFestival]?, error: APIError?)
 }
 
 protocol ViewModelDelegate: AnyObject {
@@ -33,6 +33,7 @@ class ViewController_ViewModel : ViewModelDelegate {
                 print("Success")
             case .failure(let error):
                 strongSelf.viewModelViewDelegate?.updateViewWithFestivalData(data: nil, error: error)
+                print("Failed")
             }
         }
     }

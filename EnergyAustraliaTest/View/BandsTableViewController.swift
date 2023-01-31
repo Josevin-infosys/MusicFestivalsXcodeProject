@@ -31,10 +31,12 @@ class BandsTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "bandCell", for: indexPath)
+        cell.accessoryType = .disclosureIndicator
         guard let bandKey = recordLabel?.bandKeys[indexPath.row],
               let band = recordLabel?.bands[bandKey] else { return UITableViewCell() }
         
         cell.textLabel?.text = band.name
+        cell.detailTextLabel?.text = "Music Festivals"
         return cell
     }
     

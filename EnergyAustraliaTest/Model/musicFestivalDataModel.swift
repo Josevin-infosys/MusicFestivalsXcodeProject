@@ -7,11 +7,16 @@
 
 import Foundation
 
-struct MusicEventFlatModel: Codable {
-    var musicFestival: String?
+struct MusicBand: Decodable {
+    var name: String?
     var recordLabel: String?
-    var band: String?
 }
+
+struct MusicFestival: Decodable {
+    var name: String?
+    var bands: [MusicBand]?
+}
+
 
 
 

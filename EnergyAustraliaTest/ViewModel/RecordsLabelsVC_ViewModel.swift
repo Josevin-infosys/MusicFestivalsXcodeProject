@@ -52,19 +52,18 @@ class RecordsLabelsVC_ViewModel {
     /// Function to iterate thorugh the each Entry
     /// - Parameter json: Raw data
     /// - Returns: RecordLabels wtth its Objects and array of sorrted Labels
-    func parseData(json: [[String: Any]] = []) -> ([String : RecordLabel],
+    func parseData(json: [MusicFestival] = []) -> ([String : RecordLabel],
                                                    [String]) {
-        let _ = json.forEach {
-            guard let festivalName = $0["name"] as? String,
-                  let bands = $0["bands"] as? [[String: String]] else { return }
+        
+        for musicFestival in json {
             
-            bands.forEach { eachBand in
-                guard let name = eachBand["name"],
-                      let recordLabelName = eachBand["recordLabel"] else { return }
+            guard let festivalName = musicFestival.name, let bands = musicFestival.bands else { continue }
+            for band in bands {
+                guard let name = band.name, let recordLabelName = band.recordLabel else { continue }
                 
                 if let existingRecordLabel = recordLabels[recordLabelName] {
                     existingRecordLabel.update(with: name, tourName: festivalName)
-                    return
+                    break
                 }
                 
                 let recordLabel = RecordLabel(name: recordLabelName)

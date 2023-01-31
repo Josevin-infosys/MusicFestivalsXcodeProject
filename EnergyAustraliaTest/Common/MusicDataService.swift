@@ -13,7 +13,7 @@ struct MusicDataService {
     /// - Parameters:
     ///   - urlString: API URL String
     ///   - completionHandler: Completion handler to return respose
-    func getMusicFestivalData(from urlString: String, completionHandler: @escaping (Result<[[String: Any]]?,APIError>) -> Void) {
+    func getMusicFestivalData(from urlString: String, completionHandler: @escaping (Result<[MusicFestival]?,APIError>) -> Void) {
         
         guard let validURL = validateURL(urlString: urlString) else {
             completionHandler(.failure(.badURL))
@@ -32,11 +32,11 @@ struct MusicDataService {
                     return
                 }
             }
-            print("after sending the response==>" + (response?.count.description ?? "no count"))
+            
             guard let musicFestivalData = decodeJSONStringToModel(apiResponse: responseData) else { completionHandler(.failure(.decodeError))
                 return
             }
-            print("Music Festival Data sending the response==>" + (musicFestivalData.count.description ))
+            
             completionHandler(.success(musicFestivalData))
         }
     }
@@ -70,7 +70,7 @@ struct MusicDataService {
             guard let data = data, httpResponse.statusCode == 200 else {
                 completionhandler(nil, .unableToFectchData)
                 return }
-            print("before sending the response==>" + (data.count.description ))
+            
             completionhandler(data, nil)
             
         }.resume()
@@ -79,10 +79,10 @@ struct MusicDataService {
     /// Converting text json to Array of Dicitonary
     /// - Parameter data: raw data
     /// - Returns: array of dictionary 
-    func decodeJSONStringToModel(apiResponse data:Data) -> [[String: Any]]? {
+    func decodeJSONStringToModel(apiResponse data:Data) -> [MusicFestival]? {
         do {
-            let result = try data.convertToJSON()
-            return result
+            guard let musicFestivals = try JSONDecoder().decode([MusicFestival]?.self, from: data) else { return nil }
+            return musicFestivals
         }
         catch let error{
             debugPrint("error occured while decoding = \(error.localizedDescription)")
