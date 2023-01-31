@@ -16,4 +16,5 @@ Contents
 
 
 
-![ezgif-1-9e9a2118dd](https://user-images.githubusercontent.com/54355713/213986147-369ed35e-4060-4c2b-bef7-9c000b4bcb0a.gif)
+![Simulator Screen Recording - iPhone 14 Pro - 2023-01-31 at 09 43 07](https://user-images.githubusercontent.com/54355713/215665126-8c8bda6e-193d-46e9-87e0-44fe69da9743.gif)
+
