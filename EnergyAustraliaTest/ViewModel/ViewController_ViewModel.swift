@@ -16,7 +16,7 @@ protocol ViewModelDelegate: AnyObject {
 }
 
 class ViewController_ViewModel : ViewModelDelegate {
-    var viewModelViewDelegate: ViewModelViewDelegate?
+    weak var viewModelViewDelegate: ViewModelViewDelegate?
     private var musicAPIService = MusicDataService()
     
     init(viewModelViewDelegate: ViewModelViewDelegate? = nil) {
@@ -27,13 +27,16 @@ class ViewController_ViewModel : ViewModelDelegate {
     func didTapOnButton() {
         musicAPIService.getMusicFestivalData(from: Constants.barURLString) { [weak self] (result) in
             guard let strongSelf = self else { return }
-            switch result {
-            case .success(let data):
-                strongSelf.viewModelViewDelegate?.updateViewWithFestivalData(data: data, error: nil)
-                print("Success")
-            case .failure(let error):
-                strongSelf.viewModelViewDelegate?.updateViewWithFestivalData(data: nil, error: error)
-                print("Failed")
+            
+            DispatchQueue.main.async {
+                switch result {
+                case .success(let data):
+                    strongSelf.viewModelViewDelegate?.updateViewWithFestivalData(data: data, error: nil)
+                    print("Success")
+                case .failure(let error):
+                    strongSelf.viewModelViewDelegate?.updateViewWithFestivalData(data: nil, error: error)
+                    print("Failed")
+                }
             }
         }
     }

@@ -16,7 +16,7 @@
 		AB53F947297BF67B0082EF45 /* EnergyAustraliaTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB53F946297BF67B0082EF45 /* EnergyAustraliaTestUITests.swift */; };
 		AB53F949297BF67B0082EF45 /* EnergyAustraliaTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB53F948297BF67B0082EF45 /* EnergyAustraliaTestUITestsLaunchTests.swift */; };
 		AB53F95A297C6EE50082EF45 /* MusicDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB53F959297C6EE50082EF45 /* MusicDataService.swift */; };
-		AB53F95E297C7A690082EF45 /* musicFestivalDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB53F95D297C7A690082EF45 /* musicFestivalDataModel.swift */; };
+		AB53F95E297C7A690082EF45 /* MusicFestivalDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB53F95D297C7A690082EF45 /* MusicFestivalDataModel.swift */; };
 		AB53F960297C7B730082EF45 /* ErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB53F95F297C7B730082EF45 /* ErrorModel.swift */; };
 		AB53F966297D42910082EF45 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB53F965297D42910082EF45 /* Utilities.swift */; };
 		AB53F96A297D64FC0082EF45 /* RecordLabelsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB53F969297D64FC0082EF45 /* RecordLabelsTableViewController.swift */; };
@@ -59,7 +59,7 @@
 		AB53F946297BF67B0082EF45 /* EnergyAustraliaTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnergyAustraliaTestUITests.swift; sourceTree = "<group>"; };
 		AB53F948297BF67B0082EF45 /* EnergyAustraliaTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnergyAustraliaTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		AB53F959297C6EE50082EF45 /* MusicDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicDataService.swift; sourceTree = "<group>"; };
-		AB53F95D297C7A690082EF45 /* musicFestivalDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = musicFestivalDataModel.swift; sourceTree = "<group>"; };
+		AB53F95D297C7A690082EF45 /* MusicFestivalDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicFestivalDataModel.swift; sourceTree = "<group>"; };
 		AB53F95F297C7B730082EF45 /* ErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorModel.swift; sourceTree = "<group>"; };
 		AB53F965297D42910082EF45 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		AB53F969297D64FC0082EF45 /* RecordLabelsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordLabelsTableViewController.swift; sourceTree = "<group>"; };
@@ -172,7 +172,7 @@
 		AB53F95C297C73CE0082EF45 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				AB53F95D297C7A690082EF45 /* musicFestivalDataModel.swift */,
+				AB53F95D297C7A690082EF45 /* MusicFestivalDataModel.swift */,
 				AB53F95F297C7B730082EF45 /* ErrorModel.swift */,
 			);
 			path = Model;
@@ -335,7 +335,7 @@
 				AB53F96C297DBB790082EF45 /* ViewController_ViewModel.swift in Sources */,
 				AB53F95A297C6EE50082EF45 /* MusicDataService.swift in Sources */,
 				AB53F96A297D64FC0082EF45 /* RecordLabelsTableViewController.swift in Sources */,
-				AB53F95E297C7A690082EF45 /* musicFestivalDataModel.swift in Sources */,
+				AB53F95E297C7A690082EF45 /* MusicFestivalDataModel.swift in Sources */,
 				AB53F979297E4AEF0082EF45 /* MusicFestivalTableViewController.swift in Sources */,
 				AB53F926297BF67A0082EF45 /* AppDelegate.swift in Sources */,
 				AB53F96E297DC1400082EF45 /* Constants.swift in Sources */,

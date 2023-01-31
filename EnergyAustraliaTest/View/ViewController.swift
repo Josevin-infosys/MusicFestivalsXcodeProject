@@ -30,8 +30,7 @@ class ViewController: UIViewController, ViewModelViewDelegate {
     ///   - data: API Text Data
     ///   - error: Issues with fetching data
     func updateViewWithFestivalData(data: [MusicFestival]?, error: APIError?) {
-        DispatchQueue.main.async {
-            
+       
             guard let data = data else
             {
                 if error != nil {
@@ -42,7 +41,7 @@ class ViewController: UIViewController, ViewModelViewDelegate {
             let recordLabelViewController = RecordLabelsTableViewController()
             recordLabelViewController.musicFestivalsData = data
             self.navigationController?.pushViewController(recordLabelViewController, animated: true)
-        }
+        
     }
 }
 
