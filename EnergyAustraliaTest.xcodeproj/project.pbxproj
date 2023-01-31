@@ -26,8 +26,6 @@
 		AB53F979297E4AEF0082EF45 /* MusicFestivalTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB53F978297E4AEF0082EF45 /* MusicFestivalTableViewController.swift */; };
 		AB9CF36C2988F4020009A110 /* EnergyAustraliaTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9CF3692988F4020009A110 /* EnergyAustraliaTestTests.swift */; };
 		AB9CF36E2988F4020009A110 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9CF36B2988F4020009A110 /* Extensions.swift */; };
-		ABE409F72988F55700A04653 /* MusicApiServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9CF3632988F3750009A110 /* MusicApiServiceMock.swift */; };
-		ABE409F82988F5AE00A04653 /* MusicApiServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9CF3632988F3750009A110 /* MusicApiServiceMock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,7 +67,6 @@
 		AB53F972297E0E4A0082EF45 /* RecordsLabelsVC_ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordsLabelsVC_ViewModel.swift; sourceTree = "<group>"; };
 		AB53F976297E46C60082EF45 /* BandsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BandsTableViewController.swift; sourceTree = "<group>"; };
 		AB53F978297E4AEF0082EF45 /* MusicFestivalTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicFestivalTableViewController.swift; sourceTree = "<group>"; };
-		AB9CF3632988F3750009A110 /* MusicApiServiceMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicApiServiceMock.swift; sourceTree = "<group>"; };
 		AB9CF3692988F4020009A110 /* EnergyAustraliaTestTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnergyAustraliaTestTests.swift; sourceTree = "<group>"; };
 		AB9CF36B2988F4020009A110 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -140,7 +137,6 @@
 			children = (
 				AB9CF3692988F4020009A110 /* EnergyAustraliaTestTests.swift */,
 				AB9CF36B2988F4020009A110 /* Extensions.swift */,
-				AB9CF3632988F3750009A110 /* MusicApiServiceMock.swift */,
 			);
 			path = EnergyAustraliaTestTests;
 			sourceTree = "<group>";
@@ -333,7 +329,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ABE409F82988F5AE00A04653 /* MusicApiServiceMock.swift in Sources */,
 				AB53F960297C7B730082EF45 /* ErrorModel.swift in Sources */,
 				AB53F92A297BF67A0082EF45 /* ViewController.swift in Sources */,
 				AB53F977297E46C60082EF45 /* BandsTableViewController.swift in Sources */,
@@ -354,7 +349,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB9CF36E2988F4020009A110 /* Extensions.swift in Sources */,
-				ABE409F72988F55700A04653 /* MusicApiServiceMock.swift in Sources */,
 				AB9CF36C2988F4020009A110 /* EnergyAustraliaTestTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

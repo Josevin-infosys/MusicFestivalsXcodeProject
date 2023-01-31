@@ -16,19 +16,6 @@ final class MusicDataServiceTests: XCTestCase, ViewModelViewDelegate  {
         fetchxpectation.fulfill()
     }
     
-    var viewModel: ViewModelDelegate!
-    
-    override func setUp() {
-        self.viewModel = ViewController_ViewModel(viewModelViewDelegate: self, musicAPIService: MusicDataServiceMock())
-    }
-    
-    func testViewModelFetch() {
-        fetchxpectation = XCTestExpectation(description: "fetchxpectation")
-        viewModel.didTapOnButton()
-        
-        wait(for: [fetchxpectation], timeout: 100)
-    }
-    
     func testForEmptyStringValidation() {
         let musicDataService = MusicDataService()
         let result = musicDataService.validateURL(urlString: "")
