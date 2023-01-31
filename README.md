@@ -1,7 +1,9 @@
 # MusicFestivalsXcodeProject
 Programming test projet
 
-Note: Please run the application in simulator
+Note: I have uploaded the Test as iOS project.  Please open this application in Xcode and run it in Simulator/device. 
+
+
 
 Contents
 
