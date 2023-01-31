@@ -17,10 +17,12 @@ protocol ViewModelDelegate: AnyObject {
 
 class ViewController_ViewModel : ViewModelDelegate {
     weak var viewModelViewDelegate: ViewModelViewDelegate?
-    private var musicAPIService = MusicDataService()
+    private var musicAPIService: MusicDataServiceType
     
-    init(viewModelViewDelegate: ViewModelViewDelegate? = nil) {
+    init(viewModelViewDelegate: ViewModelViewDelegate? = nil,
+         musicAPIService: MusicDataServiceType = MusicDataService()) {
         self.viewModelViewDelegate = viewModelViewDelegate
+        self.musicAPIService = musicAPIService
     }
     
     /// Delegate fucntion which call remote API to fetch data. From this funcation success and failure call back has been passed

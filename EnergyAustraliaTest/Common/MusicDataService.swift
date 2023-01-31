@@ -7,7 +7,11 @@
 
 import Foundation
 
-struct MusicDataService {
+protocol MusicDataServiceType {
+    func getMusicFestivalData(from urlString: String, completionHandler: @escaping (Result<[MusicFestival]?, APIError>) -> Void)
+}
+
+struct MusicDataService: MusicDataServiceType {
     
     /// Method called by view model to fetch remote API Data
     /// - Parameters:
