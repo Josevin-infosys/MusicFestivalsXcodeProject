@@ -5,7 +5,7 @@ Note: Please run the application in simulator
 
 Contents
 
-1. Created Xcode Prjoct
+1. Created Sample iOS/Xcode Project
 2. MVVM Architecture
 3. Rest API Call
 4. JSON Serialization
